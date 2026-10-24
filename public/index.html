@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Stack Learn Practice</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <main id="main-content">
+            <header id="header-content">
+                <h1>
+                    <i>Magic Text Prompter</i>
+                </h1>
+                <a id="github-link" href="https://github.com/ayebiyi2007">
+                    <b>GitHub</b>
+                </a>
+            </header>
+            <div id="main-body-content">
+                <p>Select an option below</p>
+                <div id="mystery-selection-buttons-group">
+                    <button class="mystery-button">Mystery 1: Funny Text</button>
+                    <button class="mystery-button">Mystery 2: Weird Text</button>
+                    <button class="mystery-button">Mystery 3: Creepy Text</button>
+                    <button class="mystery-button" id="mystery-fourth">Mystery 4: Your Text</button>
+                    <form id="mystery-four-input-form">
+                        <label for="mystery-four-input">Enter a Word</label>
+                        <input
+                            id="mystery-four-input"
+                            name="mystery-four-input"
+                            type="text"
+                            placeholder="e.g. James"
+                            autocomplete="given-name"
+                            required maxlength="60"
+                        >
+                        <button class="mystery-button" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p id="signature">Adebiyi Joshua Adeoye | 2026</p>
+            <p>
+                Created as an introduction to NodeJS, Express, and
+                ES Module Web development.
+            </p>
+        </footer>
+    </body>
+</html>

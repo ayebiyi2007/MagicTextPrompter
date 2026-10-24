@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lexend+Zetta:wght@100..900&display=swap');
+
+:root {
+    --primary-color: #ffffff;
+    --base-border-width: 1px;
+    --base-border-radius: 15px;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background: linear-gradient(-45deg, #ac4629, #d37e22, #b36853, #626535);
+    background-size: 1000% 1000%;
+    animation: gradientShift 5s ease infinite;
+    color: var(--primary-color);
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#main-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    padding-top: 10%;
+    margin-inline: auto;
+    padding: 2%;
+    border-style: solid;
+    border-width: var(--base-border-width);
+    border-radius: var(--base-border-radius);
+
+}
+
+#header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-style: solid;
+    border-width: var(--base-border-width);
+    border-radius: var(--base-border-radius);
+    margin-bottom: 2%;
+    #github-link{
+        margin: 1.5%;
+        font-family: 'Cormorant Garamond', serif;
+        text-decoration: none;
+        color: var(--primary-color);
+        text-align: center;
+    }
+    #github-link:hover{
+        color: #331703;
+        font-size: 110%;
+    }
+}
+
+#main-body-content{
+    text-align: center;
+    border-style: solid;
+    border-width: var(--base-border-width);
+    border-radius: var(--base-border-radius);
+}
+
+#mystery-selection-buttons-group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.mystery-button{
+    margin: 2%;
+    padding: 2%;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: transparent;
+    border-radius: var(--base-border-radius);
+    border-width: var(--base-border-width);
+    border-color: var(--primary-color);
+}
+.mystery-button:hover{
+    font-size: 110%;
+    padding: 3%;
+    transition: font-size 0.1s ease-in-out;
+}
+
+.mystery-button:active{
+    font-size: 110%;
+    background-color: rgb(255 255 255 / 0.1);;
+    padding: 3%;
+    transition: font-size 0.1s ease-in-out;
+}
+
+#mystery-four-input-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+    #mystery-four-input{
+        box-sizing: border-box;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: bold;
+        color: var(--primary-color);
+        background-color: transparent;
+        border-radius: var(--base-border-radius);
+        border-width: var(--base-border-width);
+        border-color: var(--primary-color);
+        padding: 2%;
+    }
+    ::placeholder{
+        color: var(--primary-color);
+    }
+    button{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    #signature{
+        font-weight: bold;
+    }
+}
