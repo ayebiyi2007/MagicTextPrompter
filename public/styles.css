@@ -81,6 +81,7 @@ body {
 }
 
 .mystery-button{
+    border-style: solid;
     margin: 2%;
     padding: 2%;
     font-family: 'Cormorant Garamond', serif;
@@ -91,21 +92,31 @@ body {
     border-width: var(--base-border-width);
     border-color: var(--primary-color);
 }
+
 .mystery-button:hover{
     font-size: 110%;
     padding: 3%;
     transition: font-size 0.1s ease-in-out;
 }
 
-.mystery-button:active{
-    font-size: 110%;
+.mystery-button.is-pressed{
+    font-size: 100%;
     background-color: rgb(255 255 255 / 0.1);;
     padding: 3%;
     transition: font-size 0.1s ease-in-out;
 }
 
+
+.mystery-button:active{
+    font-size: 100%;
+    background-color: rgb(255 255 255 / 0.1);;
+    padding: 3%;
+    transition: font-size 0.1s ease-in-out;
+}
+
+
 #mystery-four-input-form{
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: column;
     padding: 2%;
@@ -114,7 +125,7 @@ body {
         font-family: 'Cormorant Garamond', serif;
         font-weight: bold;
         color: var(--primary-color);
-        background-color: transparent;
+        background-color: rgb(255 255 255 / 0.1);;
         border-radius: var(--base-border-radius);
         border-width: var(--base-border-width);
         border-color: var(--primary-color);
