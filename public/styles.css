@@ -33,7 +33,6 @@ body {
     justify-content: center;
     flex-direction: column;
     max-width: 400px;
-    padding-top: 10%;
     margin-inline: auto;
     padding: 2%;
     border-style: solid;
@@ -93,6 +92,29 @@ body {
     border-color: var(--primary-color);
 }
 
+#submit-button{
+    border-style: solid;
+    padding: 2%;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: transparent;
+    border-radius: var(--base-border-radius);
+    border-width: var(--base-border-width);
+    border-color: var(--primary-color);
+    margin: 5% 10%;
+}
+
+#submit-button:hover{
+    background-color: rgb(255 255 255 / 0.01);
+    transition: background-color 0.1s ease-in-out;
+}
+
+#submit-button:active{
+    color: black;
+    background-color: rgb(255 255 255);
+}
+
 .mystery-button:hover{
     font-size: 110%;
     padding: 3%;
@@ -101,7 +123,7 @@ body {
 
 .mystery-button.is-pressed{
     font-size: 100%;
-    background-color: rgb(255 255 255 / 0.1);;
+    background-color: rgb(255 255 255 / 0.1);
     padding: 3%;
     transition: font-size 0.1s ease-in-out;
 }
@@ -120,7 +142,7 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 2%;
-    #mystery-four-input{
+    #mystery-four-input {
         box-sizing: border-box;
         font-family: 'Cormorant Garamond', serif;
         font-weight: bold;
@@ -130,6 +152,7 @@ body {
         border-width: var(--base-border-width);
         border-color: var(--primary-color);
         padding: 2%;
+        margin: 0% 6%;
     }
     ::placeholder{
         color: var(--primary-color);
