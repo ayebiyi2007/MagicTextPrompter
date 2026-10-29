@@ -1,5 +1,6 @@
 # Magic Text Prompter
 _Disclamer: Not magic_
+
 A short term learning project meant to give myself a more direct grasp on client, server, and database web communication using Nodejs. 
 
 ## Run
