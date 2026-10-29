@@ -1,5 +1,5 @@
 # Yoruba-TTS-Processing
-A short term learning project meant to give myself a more direct grasp on client-server side based networking. 
+A short term learning project meant to give myself a more direct grasp on client, server, and database web communication using Nodejs. 
 
 ## Run
 
