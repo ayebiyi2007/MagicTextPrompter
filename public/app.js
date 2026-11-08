@@ -12,14 +12,15 @@ const states = {
 }
 
 const mysteryKeybinds = {}
-
 const initListeners = () => {
     let DOMQueryOrder = 1;
     for(const mysteryButton of webElements.mysteryButtonSelector){
         mysteryKeybinds[DOMQueryOrder] = mysteryButton;
+
         mysteryButton.addEventListener('click', () => {
             mysteryButtonActivation(mysteryButton);
         });
+
         window.addEventListener('keydown', (event) => {
             let mysteryBinds = (event.ctrlKey && event.altKey);
             let mysteryKey = (mysteryKeybinds[event.key] === mysteryButton);
@@ -91,6 +92,6 @@ const backgroundAnimation = () => {
     }
 }
 
+//Website Functions
 backgroundAnimation();
 initListeners();
-console.log(mysteryKeybinds);
