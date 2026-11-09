@@ -43,11 +43,17 @@ export function createServer() {
         next();
     });
 
-    // Express selects this handler for a GET request to the greeting URL.
     app.get('/mystery', (request, response) => {
         // json() sets the JSON content type and serializes the object for us.
         return response.json({
             message: "Ayo!",
+        });
+    });
+
+    app.get('/mystery/fourth', (request, response) => {
+        // json() sets the JSON content type and serializes the object for us.
+        return response.json({
+            message: "Heyho!",
         });
     });
 

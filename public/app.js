@@ -5,6 +5,7 @@ const webElements = {
     toggleableForm: document.querySelector("#mystery-four-input-form"),
     toggleableFormValue: document.querySelector("#mystery-four-input"),
     submitButton: document.querySelector("#submit-button"),
+    mysteryFourth: document.querySelector("#mystery-fourth")
 }
 
 const states = {
@@ -49,7 +50,7 @@ function mysteryButtonActivation(mysteryButton){
         states.currentlySelectedMystery = null;
     }else if(states.currentlySelectedMystery != null){
         states.currentlySelectedMystery.classList.toggle("is-pressed");
-        if(states.currentlySelectedMystery === document.getElementById("mystery-fourth")){
+        if(states.currentlySelectedMystery === webElements.mysteryFourth){
             webElements.toggleableForm.style.display = "none";
         }
         states.currentlySelectedMystery = mysteryButton;
@@ -60,7 +61,7 @@ function mysteryButtonActivation(mysteryButton){
     /* This is not very efficient in terms of evaluating this code every button
     * But the scope of this project is small enough to justify the burden
      */
-    if(mysteryButton === document.getElementById("mystery-fourth")){
+    if(mysteryButton === webElements.mysteryFourth){
         if(webElements.toggleableForm.style.display === "flex") {
             webElements.toggleableForm.style.display = "none";
         }else{
